@@ -1,6 +1,8 @@
 public class Game
 {
 
+    //I am ready for this project!!! (Albert)
+
     class Item { // submitted by Muhammad Marenah
         private String name;
 
