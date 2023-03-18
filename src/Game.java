@@ -1,5 +1,8 @@
 public class Game
 {
+    public int 42;
+    String "Let's get this project underway!";//submitted by Jonathan//
+
 
     //I am ready for this project!!! (Albert)
 
