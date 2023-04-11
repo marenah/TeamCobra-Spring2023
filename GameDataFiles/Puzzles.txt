@@ -1,0 +1,1 @@
+puzzleID~puzzleRoomID~problem~solution~hint~correctOutcome~failedOutcome~attempts
