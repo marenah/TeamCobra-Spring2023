@@ -1,25 +1,20 @@
 import java.io.Serializable;
-import java.util.Scanner;
 
 public class Puzzle implements Serializable {
-
-    private Scanner infile;
     private String puzzleType;
-    private String puzzleID;
-    private String puzzleRoomID;
+    private int puzzleID;
     private String problem;
     private String solution;
     private String hint;
     private String correctOutcome;
     private String failOutcome;
-    private String attempts;
-    private String solved;
+    private int attempts;
+    private boolean solved;
 
 
-    public Puzzle(String puzzleType, String puzzleID, String puzzleRoomID, String problem, String solution, String hint, String correctOutcome, String failOutcome, String attempts, String solved) {
+    public Puzzle(String puzzleType, int puzzleID, String problem, String solution, String hint, String correctOutcome, String failOutcome, int attempts, boolean solved) {
         this.puzzleType = puzzleType;
         this.puzzleID = puzzleID;
-        this.puzzleRoomID = puzzleRoomID;
         this.problem = problem;
         this.solution = solution;
         this.hint = hint;
@@ -45,9 +40,10 @@ public class Puzzle implements Serializable {
         return failOutcome;
     }
 
-    public String getAttempts() {
+    public int getAttempts() {
         return attempts;
     }
+
 
     public boolean solve(String solution) {
         if (this.solution.equals(solution)) {
